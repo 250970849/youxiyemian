@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    font:14px/1.5 Arial;
+    background-color: #f7f7f7
+}
+header {
+    height: 100%;
+    background:  #000 url(https://raw.githubusercontent.com/250970849/resume/master/DNF%E8%83%8C%E6%99%AF.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+header::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0,0.4)
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+    
+
+.nav {
+    position: absolute;
+    top: 90px;
+    right: 20px;
+}
+.container {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.btn-x1 {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background-color: #f7ba3e;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+.btn-x1:hover {
+    box-shadow: 0 15px 30px  rgba(0, 0, 0, .4);
+    opacity: 1;
+}
+.navbar h2 {
+    color: goldenrod;
+    font-size: 50px
+}
+.nav li {
+    margin: 40px
+}
+.nav a{
+    color: #eee;
+}
+.nav a:hover {
+    color: goldenrod
+}
+.Characteristic {
+    height: 100%;
+    width: 100%;
+}
+.Characteristic h1 {
+    padding-top: 200px
+}
+.tag h1 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.tag>p {
+    font-size: 16px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: none;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #777;
+}
+.text-center {
+    text-align: center;
+}
+.Characteristic ul {
+    display: block
+}
+.Characteristic li {
+    float: left;
+    width: 33.33%;
+    padding: 10px 20px;
+
+}
+.Characteristic h4 {
+    font-weight: 700;
+    font-size: 20px
+}
+.Characteristic  li>.iconfont {
+    font-size: 40px;
+}
+.text-center p {
+    margin-top: 20px;
+    
+}
+
+.Characteristic figure {
+    float: left;
+}
+.career {
+    margin-top: 40px;
+    height: 1000px;
+    text-align: center
+}
+.career img {
+    width: 100%;
+    height: 100%;
+    
+}
+.character-introduction{
+    margin-top: 20px
+}
+.character-introduction a {
+    display: block;
+    height: 250px;
+    position: relative;
+    transition: all 1s ease;
+   
+}
+.character-introduction figure {
+    width: calc(33.33% - 60px);
+    height: 300px;
+    margin: 50px 30px;
+    float: left
+}
+.character-introduction figcaption {
+    font-size: 20px;
+    margin: 10px
+    
+}
+.character-introduction p {
+    font-size: 16px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: none;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #777;
+}
+.mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(218, 165, 32,0.8);
+    opacity: 0;
+    padding-top: 100px;
+    color: black;
+    font-size: 25px;
+    transition: all ease 1s;
+}
+.character-introduction a:hover .mask {
+    opacity: 1;
+    display: block;
+    transition: all ease 1s;
+}
+.developing {
+    text-align: center;
+    height: 800px;
+    width: 1000px;
+    margin: 30px auto;
+}
+.developing img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid lightblue;  
+}
+.developing li {
+    margin-top: 40px;
+    position: relative;
+}
+.developing li:nth-child(odd) {
+    margin-top: 20px;
+    padding-right: calc(50% - 50px);
+    text-align: right;
+}
+.developing dl {
+    margin-right: 140px;
+}
+.timeline li:nth-child(even) { 
+    padding-left: calc(50% - 50px);
+    text-align: left
+}
+.timeline li:nth-child(even) dl {
+    margin-right: 0;
+    margin-left: 140px;
+}
+.developing li:nth-child(odd) img {
+    float: right;
+}
+.developing li:nth-child(even) img {
+    float: left;
+}
+.timeline dt {
+    font-size: 18px;
+    font-weight: bold;
+}
+.timeline dd{
+    font-size: 14px;
+}
+.timeline dd:nth-child(2) {
+color: #777 
+}
+.timeline > li::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 80px;
+    width: 4px;
+    background-color: lightblue;
+    left: 50%;
+    top:100px; 
+}
+.timeline span {
+    display: inline-block;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid lightblue;
+    background: lightblue;
+}
+.timeline > li:last-child::before {
+    height: 0;
+}
+.star {
+    margin: 50px auto;
+    height: 100%;
+    text-align: center;
+    background: #f7f7f7
+}
+
+.star img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid lightblue
+    
+}
+.star ul>li {
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+}
+.star h4{
+    font-size: 20px
+}
+.star ul p{
+    color: #777;
+}
+
+.star li  span:nth-of-type(1){
+    font-size: 40px;
+    
+}
+.star a{
+    display:inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    color: #000;
+    transition: all 1s ease;
+    
+}
+.star a:hover{
+    color: red;
+    transition: all 1s ease;
+}
+.contact{
+    height: 100%;
+    background: url(http://img.app178.com/tu/201410/g3euysmjxkm.jpg)center center no-repeat;
+}
+.contact .tag{
+    margin-top: 20px
+}
+.contactleft {
+    float: left;
+    padding-left: calc(50% - 530px);
+}
+.contactright {
+    margin-top: 30px;
+    float: right;
+    padding-right: calc(50% - 530px);
+}
+input {
+    display: block;
+    width: 500px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 5px;
+    outline:none;
+    border: 1px #eee solid;
+    color: #777;
+}
+textarea {
+    height: 210px;
+    width: 500px;
+    outline:none;
+    padding: 10px;
+    border: 1px #eee solid;
+    border-radius: 5px;
+}
+.btn{
+    width: 100%;
+    position: relative;
+    
+}
+button {
+    position: absolute;
+    left:460px;
+    top: 120%;
+    width:141px;
+    height:53px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #f7ba3e;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: #f7ba3e 1px solid;
+    opacity: 0.9;
+    outline:none;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    
+}
+button:hover{
+    box-shadow: 0 15px 30px  rgba(0, 0, 0, .4);
+    opacity: 1;
+}
+form{
+    display: block;
+    height:500px;
+    width: 1050px;
+    margin: 0 auto
+}
+.ten{
+    background: #777;
+    position: fixed;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    right:0;
+    bottom: 100px;
+    text-align: center;
+    opacity: 0.8;
+}
+.ten a{
+    color: #f7ba3e;
+}
+.ten:hover{
+    box-shadow: 0 3px 6px  rgba(0, 0, 0, .4);
+    opacity: 1;
+}
